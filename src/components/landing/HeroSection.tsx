@@ -53,7 +53,7 @@ const HeroSection = () => {
           className="w-full max-w-5xl mx-auto overflow-hidden rounded-xl border shadow-2xl"
         >
           <img
-            src="E:\pavan\Stock\stocktastic-portfolio-guide-main\public\gradient-stock-market-concept_23-2149166910.avif"
+            src="/20241228040618_stock-market-forex-trading-graph.png"
             alt="Stocktastic dashboard"
             className="w-full object-cover"
           />

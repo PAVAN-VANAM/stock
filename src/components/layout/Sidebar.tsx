@@ -2,18 +2,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
-import { 
-  LayoutDashboard, 
-  LineChart, 
-  PieChart, 
-  Star, 
-  History, 
+import {
+  LayoutDashboard,
+  LineChart,
+  PieChart,
+  Star,
+  History,
   Settings,
   Search
 } from 'lucide-react';
 
 const navigation = [
-  { name: 'Dashboard', icon: LayoutDashboard, path: '/' },
+  { name: 'Dashboard', icon: LayoutDashboard, path: '/dashboard' },
   { name: 'Search', icon: Search, path: '/search' },
   { name: 'Portfolio', icon: PieChart, path: '/portfolio' },
   { name: 'Watchlist', icon: Star, path: '/watchlist' },

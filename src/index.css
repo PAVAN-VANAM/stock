@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -91,19 +90,19 @@
   .trend-up {
     @apply text-profit font-medium;
   }
-  
+
   .trend-down {
     @apply text-loss font-medium;
   }
-  
+
   .card-stats {
     @apply p-6 rounded-lg border bg-card text-card-foreground shadow-sm;
   }
-  
+
   .stock-list-item {
     @apply p-4 rounded-md hover:bg-muted/50 transition-colors;
   }
-  
+
   .loading-skeleton {
     @apply animate-pulse-light bg-muted rounded;
   }

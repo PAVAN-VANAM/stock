@@ -30,12 +30,12 @@ const Login = () => {
       // In a real app, you would call an authentication API here
       // For now, we'll simulate a successful login
       await new Promise(resolve => setTimeout(resolve, 1000));
-      
+
       toast({
         title: "Login successful",
         description: "Welcome back to Stocktastic!",
       });
-      
+
       // Redirect to dashboard after successful login
       navigate('/dashboard');
     } catch (error) {
@@ -56,12 +56,12 @@ const Login = () => {
           <ArrowLeft className="h-4 w-4 mr-2" /> Back to home
         </Button>
       </div>
-      
+
       <div className="flex items-center mb-8">
         <BarChart3 className="h-8 w-8 text-primary mr-2" />
         <span className="text-2xl font-bold">Stocktastic</span>
       </div>
-      
+
       <Card className="w-full max-w-md">
         <CardHeader className="space-y-1">
           <CardTitle className="text-2xl font-bold text-center">Log in to your account</CardTitle>
@@ -71,14 +71,16 @@ const Login = () => {
         </CardHeader>
         <form onSubmit={handleSubmit}>
           <CardContent className="space-y-4">
+            <em>demo account <span className='text-red-600'>email: admin@gmail.com</span></em><br />
+            <em>demo account <span className='text-red-600'>password: 12345</span></em>
             <div className="space-y-2">
               <Label htmlFor="email">Email</Label>
-              <Input 
-                id="email" 
-                name="email" 
-                type="email" 
-                placeholder="name@example.com" 
-                required 
+              <Input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="name@example.com"
+                required
                 value={formData.email}
                 onChange={handleChange}
               />
@@ -90,11 +92,11 @@ const Login = () => {
                   Forgot password?
                 </Button>
               </div>
-              <Input 
-                id="password" 
-                name="password" 
-                type="password" 
-                required 
+              <Input
+                id="password"
+                name="password"
+                type="password"
+                required
                 value={formData.password}
                 onChange={handleChange}
               />

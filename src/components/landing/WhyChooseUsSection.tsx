@@ -22,7 +22,7 @@ const staggerContainer = {
 const WhyChooseUsSection = () => {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
-      <motion.div 
+      <motion.div
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -52,9 +52,9 @@ const WhyChooseUsSection = () => {
           </motion.div>
           <motion.div variants={fadeIn} className="relative lg:pl-12">
             <div className="relative overflow-hidden rounded-xl border shadow-xl">
-              <img 
-                src="https://i.imgur.com/EE2IbE5.jpg" 
-                alt="Stocktastic portfolio dashboard" 
+              <img
+                src="/stock.jpeg"
+                alt="Stocktastic portfolio dashboard"
                 className="w-full object-cover aspect-video"
               />
               <div className="absolute inset-0 border-4 border-primary/20 rounded-xl pointer-events-none"></div>
